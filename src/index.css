@@ -1,0 +1,28 @@
+@import url('./vendor/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  font-feature-settings: 'liga' off, 'clig' off;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+
+  background-color: #EFEFEF;
+  color: #42434b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --Main-White: #fff;
+  --Main-Primary: #e10d34;
+  --Main-Dark-Gray: #42434b;
+  --Main-Light-Gray: #f9f9f9;
+  --Main-Gray: #EFEFEF;
+  --Main-Secondary: #275D9F;
+
+  --max-desktop-width: 1440px;
+}

@@ -1,0 +1,49 @@
+.menubar {
+  width: 64px;
+  height: 100vh;
+  background-color: var(--Main-Dark-Gray);
+  padding-top: 24px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menubar__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.menubar__button {
+  padding: 12px;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menubar__button_active {
+  background-color: #6d6e74;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+}
+
+.menubar__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 12px;
+}
+
+.menubar__avatar {
+  border-radius: 50%;
+}

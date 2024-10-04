@@ -1,0 +1,6 @@
+.section {
+  display: flex;
+  background-color: var(--Main-Light-Gray);
+  min-height: 100vh;
+  width: var(--max-desktop-width);
+}

@@ -1,0 +1,24 @@
+.nav {
+  width: 581px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__button {
+  height: 42px;
+  color: var(--Main-Dark-Gray);
+  opacity: 0.64;
+  border: none;
+  border-bottom: 2px solid #e6e6e6;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 32px;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.nav__button_active {
+  color: var(--Base-Carrot);
+  border-bottom: 2px solid var(--Main-Primary);
+}
