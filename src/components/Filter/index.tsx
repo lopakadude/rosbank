@@ -3,9 +3,13 @@ import { useForm, SubmitHandler } from 'react-hook-form';
 import{ useState } from 'react';
 import arrowDown from '../../assets/images/menubar/arrowDown.svg';
 
+type Inputs = {
+  name: string;
+  email: string;
+};
 
 export default function Filter({ activeTab } : {activeTab: string}) {
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
   const [isOpenTeams, setIsOpenTeams] = useState(false);
   const [isOpenСompetence, setIsOpenСompetence] = useState(false);
@@ -17,6 +21,8 @@ export default function Filter({ activeTab } : {activeTab: string}) {
     <section className={styles.section}>
       <h1 className={styles.section__title}>Ревью команды</h1>
       <form onSubmit={handleSubmit(onSubmit)}>
+        <input {...register('name', { required: true })} />
+        <input {...register('email', { required: true })} />
         <ul className={styles.menu__list}>
           <li
             className={styles.menu__group}
